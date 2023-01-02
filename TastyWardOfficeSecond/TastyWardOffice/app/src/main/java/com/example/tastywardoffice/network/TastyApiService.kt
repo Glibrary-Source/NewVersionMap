@@ -20,7 +20,7 @@ private val retrofit = Retrofit.Builder()
 
 interface TastyApiService {
     @GET("photos")
-    suspend fun getPhotos(): List<TastyPhoto>
+    fun getPhotos(): List<TastyPhoto>
 }
 
 object TastyApi {

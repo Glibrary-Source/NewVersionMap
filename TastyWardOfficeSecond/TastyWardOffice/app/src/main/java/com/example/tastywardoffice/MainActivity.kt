@@ -48,12 +48,11 @@ class MainActivity : AppCompatActivity() {
 //        liveText.observe(this, Observer {
 //            binding.testText.text = it
 //        })
-//
-//        binding.textbutton.setOnClickListener {
-//            liveText.value = "Hellow World ${++count}"
-//        }
+
+
 
         mainViewModel.height.observe(this, nameObserver)
+
 
     }
 }

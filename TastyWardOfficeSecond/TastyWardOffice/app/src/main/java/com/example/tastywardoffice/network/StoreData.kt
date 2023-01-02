@@ -1,5 +1,6 @@
 package com.example.tastywardoffice.network
 
+import android.location.Geocoder
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
@@ -12,6 +13,19 @@ data class RequestType(
 data class WholeData(
         @SerializedName("stores")
         val stores: List<Items>
+)
+
+data class RequestType2(
+    @Expose
+    @SerializedName("type")
+    val type: String,
+    @Expose
+    @SerializedName("storeGEOPoints")
+    val storeGEOPoints: List<Double>,
+    @Expose
+    @SerializedName("MyGEOPoint")
+    val MyGEOPoint : List<Double>
+
 )
 
 data class Items(

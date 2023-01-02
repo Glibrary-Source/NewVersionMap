@@ -24,6 +24,11 @@ interface TastyWardApiService {
     fun getWholeData(
         @Body data: RequestType
     ): Call<WholeData>
+
+    @POST("test1")
+    fun getDistance(
+        @Body data: RequestType2
+    ): Call<WholeData>
 }
 
 object TastyWardApi{
